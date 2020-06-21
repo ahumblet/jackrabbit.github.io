@@ -1,0 +1,221 @@
+/***
+
+https://www.youtube.com/watch?v=kbLfWKGVsMQ
+
+*/
+
+
+/* stopping to code along at 48:00 
+1:03 is where he starts working on the desktop version */;
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/**************** MY CODE ****************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+
+  font-family: catamaran;
+  color: #111;
+}
+
+/******** HEADER ********/
+
+header {
+  /*background-color: pink;*/
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: flex-end; 
+}
+
+header .left {
+  margin: 0px 0px 0px 20px; /* To indent from left */
+  flex: 5;
+}
+
+header .right {
+  margin: 0px 7px 0px 0px; /* To indent from right */
+  text-align: right;
+  flex: 1;
+}
+
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px 0px 0px;
+}
+
+header nav ul li a {
+  font-family: catamaran;
+  font-size: 20px;
+  color: #111;
+  line-height: 50px; /*This matches ig logo height to ensure alignment*/
+}
+
+/******** MAIN BODY ********/
+
+.main {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  /*background-color: lavender;*/
+
+  display: flex;
+  justify-content: center;
+/*
+
+I used this to center the slideshow but it makes all my iframes be inline
+alsso, main shouldn't be vh - header for non homepage pages. need to create special main classes for diff types of pages. 
+*/
+}
+
+main .slideshow-container {
+  width: 100%;
+  height: auto;
+}
+
+
+/******** INTERVIEW PAGE ********/
+
+.debug {
+  border-color: red;
+  border: 1px;
+  /*border-style: solid;*/
+}
+
+.center-panel {
+  width: 80%;
+  background-color: #fff9db;
+  text-align: center;
+  /*padding: 20px 10px;*/
+  padding: 3%;
+
+}
+
+.center-panel h1 {
+  font-family: catamaran;
+  font-size: 25px;
+  color: #111;
+  margin: 10px;
+}
+
+.center-panel p {
+  text-align: left;
+  margin: 20px;
+}
+
+.mixcloud {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+iframe {
+  margin: 10px;
+  display: block;
+  width: 60%;
+  height: auto;
+}
+
+
+
+
+/******** MEDIA QUERIES ********/
+
+/* this is what changes with large width */ 
+@media only screen and (min-width: 700px) {
+  
+/*    .index-links div {
+    margin: 16px 16px 0px;
+    width: 200px;
+    height: 100px;
+    background-color: #f2f2f2;*/
+  }
+
+}
