@@ -88,21 +88,31 @@ select {
 }
 
 
+/*****************************************/
 /**************** MY CODE ****************/
+/*****************************************/
+
 
 * {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-
   font-family: catamaran;
   color: #111;
 }
 
+@font-face {
+    font-family: 'Seaside Resort';
+    src: url('./fonts/SEASRN__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/************************/
 /******** HEADER ********/
+/************************/
 
 header {
-  /*background-color: pink;*/
   width: 100%;
   height: 70px;
   display: flex;
@@ -138,7 +148,9 @@ header nav ul li a {
   line-height: 50px; /*This matches ig logo height to ensure alignment*/
 }
 
+/***************************/
 /******** MAIN BODY ********/
+/***************************/
 
 .main {
   width: 100%;
@@ -154,9 +166,14 @@ alsso, main shouldn't be vh - header for non homepage pages. need to create spec
 */
 }
 
-main .slideshow-container {
+.slideshow-container {
   width: 100%;
   height: auto;
+}
+
+.slideshow-container img {
+  height: calc(100vh - 140px);
+  object-fit: cover;
 }
 
 
@@ -203,19 +220,23 @@ iframe {
   height: auto;
 }
 
-
-
-
 /******** MEDIA QUERIES ********/
 
-/* this is what changes with large width */ 
-@media only screen and (min-width: 700px) {
-  
-/*    .index-links div {
-    margin: 16px 16px 0px;
-    width: 200px;
-    height: 100px;
-    background-color: #f2f2f2;*/
-  }
 
+/*
+When height is limited, scale according to height and add padding around the widths.
+*/
+@media (min-aspect-ratio: 1020/825) {
+  main .slideshow-container {
+    width: auto;
+  }
+}
+
+/* 
+When width is limited, scale according to height and crop the sides up to a min width. 
+*/
+@media (max-aspect-ratio: 1020/825) {
+  main .slideshow-container {
+    width: 100%;
+  }
 }
