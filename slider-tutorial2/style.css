@@ -1,20 +1,19 @@
-#controls {
-  text-align:center;
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
-#controls span {
-  padding-right:2em;
-  cursor:pointer;
-}
+
 #slideshow {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto 10px;
+  width: auto;
+  height: 100vh;  
 }
+
 #slideshow img {
   width: 100%;
   height: 100%;
-  position:absolute;
+  object-fit: cover;
+  position: absolute;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -30,3 +29,71 @@
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
 }
+
+.dot-bar {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.dot {
+  height: 18px;
+  width: 18px;
+  margin: 15px 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.dot:hover {
+  /*not sure if I like hover effect*/
+  background-color: #555;
+}
+
+.dot.selected {
+  background-color: #777;
+}
+
+.leftArrow, .rightArrow {  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 16px;  
+    color: lightgrey;  
+    font-size: 25px;  
+    transition: 0.6s ease;  
+} 
+
+.rightArrow {  
+    right: 0;  
+}  
+
+.leftArrow:hover, .rightArrow:hover {  
+    color: gray;  
+} 
+
+.debug
+{
+  border: 1px;
+  border-style: solid;
+  border-color: green;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+

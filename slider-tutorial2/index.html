@@ -2,22 +2,51 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./slider.js"></script>  
-
 </head>
 
-<div id="slideshow" class="shadow">
+<body>
+  <div id="slideshow">
+    <img class="opaque" src="./images/img1.jpg" />
+    <img src="./images/img2.jpg" />
+    <img src="./images/img3.jpg" />
+    <img src="./images/img4.jpg" />
+  </div>
+
+  <div>
+    <a class="leftArrow debug">❮</a>  
+    <a class="rightArrow debug">❯</a>  
+  </div>
+
+
+
+  <div id="controls" class="dot-bar debug">
+    <span class="dot selected"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+          <!-- <a class="leftArrow" onclick="nextSlide(-1)">❮</a>  
+        <a class="rightArrow" onclick="nextSlide(1)">❯</a>   -->
+
+</body>
+
+
+
+<!-- 
+<div id="slideshow" class="debug">
   <img class='opaque' src="./images/img1.jpg" />
   <img src="./images/img2.jpg" />
   <img src="./images/img3.jpg" />
   <img src="./images/img4.jpg" />
 </div>
-<p id="controls">
-  <span class="selected">Image 1</span>
-  <span>Image 2</span>
-  <span>Image 3</span>
-  <span>Image 4</span>
-</p>
+<p id="controls" class="debug">
+  <span class="dot selected"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</p> -->
+
 
