@@ -1,24 +1,31 @@
+$(document).ready(function() {
 
+    $("#controls").on('click', 'span', function() {
+        var newImageIndex = $(this).index(); 
 
-var slide_index = 1;  
+        $("#slideshow img").removeClass("opaque");
+        $("#controls span.dot").removeClass("selected");
+        $("#slideshow img").eq(newImageIndex).addClass("opaque");
+        $("#controls span.dot").eq(newImageIndex).addClass("selected");
+    });
 
-displaySlides(slide_index);  
+    $("#arrows").on('click', 'span', function() {
+        var arrowIndex = $(this).index(); 
+        var currImageIndex = $("#slideshow img").filter(".opaque").index();
+        var numImages = $("#slideshow img").length;
+        var newImageIndex;
 
-function nextSlide(n) {  
-    displaySlides(slide_index += n);  
-}  
+        if (arrowIndex == 0) {
+            newImageIndex = ((currImageIndex - 1) > 0) ? (currImageIndex - 1) : (numImages - 1);
+        } else if (arrowIndex == 1) {
+            newImageIndex = (currImageIndex + 1) % numImages;
+        }
 
-function currentSlide(n) {  
-    displaySlides(slide_index = n);  
-}  
+        $("#slideshow img").removeClass("opaque");
+        $("#controls span.dot").removeClass("selected");
+        $("#slideshow img").eq(newImageIndex).addClass("opaque");
+        $("#controls span.dot").eq(newImageIndex).addClass("selected");
 
-function displaySlides(n) {  
-    var i;  
-    var slides = document.getElementsByClassName("showSlide");  
-    if (n > slides.length) { slide_index = 1 }  
-    if (n < 1) { slide_index = slides.length }  
-    for (i = 0; i < slides.length; i++) {  
-        slides[i].style.display = "none";  
-    }  
-    slides[slide_index - 1].style.display = "block";  
-}  
+    });
+
+});
