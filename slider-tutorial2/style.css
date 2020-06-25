@@ -78,7 +78,7 @@
 .debug
 {
   border: 1px;
-  border-style: solid;
+  /*border-style: solid;*/
   border-color: green;
 }
 
