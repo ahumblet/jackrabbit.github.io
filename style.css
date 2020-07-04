@@ -176,15 +176,13 @@ body {
 .slick-slider-container {
   display: inline-block;
   width: 100%;
-  height: calc(100vh - 140px);
-  min-height: 400px;
+  height: calc(100vh - 120px);
 }
 
 .slick-slider-container img {
   width: 100vw;
-  height: calc(100vh - 140px); /*couldn't set w&h as relative to parent bc it is internally relative display*/
+  height: calc(100vh - 120px); /*couldn't set w&h as relative to parent bc it is internally relative display*/
   object-fit: cover;
-  outline-style: dotted;
   overflow: hidden;
 }
 
@@ -300,20 +298,40 @@ iframe {
 }
 
 
+/*****/
 
 /******** MEDIA QUERIES ********/
 
 /*
-When height is limited, scale according to height and add padding around the widths.
+This covers all phones in landscape mode.
+- make header and footer smaller 
+- TODO:
+  - fix margins on header 
 */
-/*@media (min-aspect-ratio: 1020/825) {
-  main .slideshow-container {
-    width: auto;
+@media screen and (max-height: 500px) {
+  header {
+    height: 40px;
+  }
+
+  .slick-slider-container {
+    height: max(320px, calc(100vh - 80px));
+  }
+
+  .slick-slider-container img {
+    height: max(320px, calc(100vh - 80px)); /*couldn't set w&h as relative to parent bc it is internally relative display*/
+  }
+
+  
+
+
+
+  main .logo {
+    color: purple;
   }
 }
 
  
-When width is limited, scale according to height and crop the sides up to a min width. 
+/* When width is limited, scale according to height and crop the sides up to a min width. 
 
 @media (max-aspect-ratio: 1020/825) {
   main .slideshow-container {

@@ -126,7 +126,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 20px;
+    bottom: 20px; /* how  high up the dots are */
 
     display: block;
 
@@ -144,8 +144,8 @@
 
     display: inline-block;
 
-    width: 20px;  /* Space between dots */
-    height: 20px;
+    width: 20px;   
+    height: 20px; 
     margin: 0 5px;
     padding: 0;
 
@@ -199,6 +199,8 @@
     opacity: .35;
     color: black;
 
+    /*outline-style: solid;*/
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -206,4 +208,16 @@
 {
     opacity: .75;
     color: black;
+}
+
+
+
+@media screen and (max-height: 500px) {
+
+    .slick-dots
+    {
+        bottom: 5px; /* how  high up the dots are */
+    }
+    
+
 }
