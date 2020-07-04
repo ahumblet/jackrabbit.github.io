@@ -333,8 +333,6 @@ iframe {
     margin: 0px 15px -2px 0px; /* Indent from right and bottom */
   }
 
-
-
   .slick-slider-container {
     height: max(320px, calc(100vh - 60px));
   }
@@ -343,9 +341,19 @@ iframe {
     height: max(320px, calc(100vh - 60px)); /*couldn't set w&h as relative to parent bc it is internally relative display*/
   }
 
-  main .logo {
-    color: purple;
+  .logo {
+    position: absolute;
+    top: max(50%, 150px);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
+  .listen {
+    top: max(calc(50% + 90px), 250px) ;
+  } 
+
+
+
 }
 
 
