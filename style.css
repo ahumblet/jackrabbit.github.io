@@ -42,7 +42,7 @@ dd {
 /* Set core body defaults */
 body {
   /*min-height: 100vh; I think i might want this for non-homepage pages*/
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -83,7 +83,7 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    /*scroll-behavior: auto !important;*/
   }
 }
 
@@ -92,6 +92,10 @@ select {
 /**************** MY CODE ****************/
 /*****************************************/
 
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0px;
@@ -112,16 +116,24 @@ select {
   /*outline-style: solid;*/
 }
 
+body {
+  /*scroll-behavior: smooth;  */
+}
+
 /************************/
 /******** HEADER ********/
 /************************/
 
 header {
+  position: fixed;
   width: 100%;
   height: 70px;
   display: flex;
   align-items: flex-end; /* Push children to the bottom of the element*/
   /*outline-style: solid;*/
+  background-color: white;
+  opacity: 0.9;
+  z-index: 10000;
 }
 
 header .left {
@@ -167,6 +179,10 @@ header div a img {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: pink;
+  /*outline-style: solid;*/
+  margin: 0px;
+  padding: 0px;
 }
 
 /******************************/
@@ -178,16 +194,19 @@ body {
 }   
 
 .slick-slider-container {
+  position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 140px);
+  /*border-style: dotted;*/
 }
 
 .slick-slider-container img {
   width: 100vw;
-  height: calc(100vh - 120px); /*couldn't set w&h as relative to parent bc it is internally relative display*/
+  height: calc(100vh - 140px); /*couldn't set w&h as relative to parent bc it is internally relative display*/
   object-fit: cover;
   overflow: hidden;
+  /*border-style: solid;*/
 }
 
 .arrow-prev, .arrow-next {
@@ -251,9 +270,33 @@ body {
   opacity: 0.95;
 }
 
+
+/************************************/
+/******** INTERVIEWS SECTION ********/
+/************************************/
+
+#interviews {
+  text-align: center;
+}
+
+.interview-container {
+  width: 70vw;
+  margin: auto;
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+.interview-container, .about-container {
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+
+
 /****************************/
 /******** INTERVIEWS ********/
 /****************************/
+
 
 .header-extension {
   width: 100%;
@@ -305,10 +348,10 @@ body {
 
 .center-panel h1 {
   font-family: catamaran;
-  font-size: 25px;
+  font-size: 30px;
   background-color: transparent;
   /*color: #111;*/
-  margin: 0px 10px 0px 10px;
+  margin: 0px 20px 0px 20px;
 }
 
 .center-panel p {
@@ -319,8 +362,8 @@ body {
 
 .mixcloud {
   display: inline-block;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   padding: 10px;
 }
 
@@ -386,3 +429,85 @@ From there, most subsequent iPhone models toggle between 375 and 414 pixels wide
 with increasing viewport sizes as you move into the Galaxy phones and tablets.*/
 
 
+
+/****************************/
+/******** TAKE 2 ********/
+/****************************/
+
+header {
+  /*display: none;*/
+}
+
+.nav-spacer {
+  width: 100%;
+  height: 70px;
+  /*background-color: yellow;*/
+}
+
+h2 {
+  /*padding: 20px;*/
+  /*margin: 20px;*/
+  color: 111;
+  font-family: "catamaran";
+  /*text-transform: uppercase;*/
+  font-size: 30px;
+  line-height: 70px;
+  /*outline-style: dotted;*/
+}
+
+
+
+/************************************/
+/******** ABOUT SECTION ********/
+/************************************/
+
+#about {
+  position: relative;
+}
+
+#about img {
+  width: 100%;
+  position: absolute;
+  top: 70px;  /* Matches h2 line-height*/
+}
+
+.about-container {
+  display: relative;
+  text-align: center;
+}
+
+#about .overlay {
+  position: absolute;
+  top: 70px;  /* Matches h2 line-height*/
+  background-color: grey;
+  opacity: 0.5;
+}
+
+.about-overlay { /*should change this to only be relative to image frame*/
+  position: absolute;
+  top: 80%
+  left: 50%;
+  /*transform: translate(-50%, -50%);*/
+
+  width: 80vw;
+  /*background-color: grey;
+  opacity: 0.5;*/
+  text-align: center;
+  /*border-radius: 5px;*/
+}
+
+.about-overlay p {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 5px;
+}
+
+
+
+  
+  
+  
+  

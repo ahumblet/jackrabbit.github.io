@@ -1,0 +1,51 @@
+
+
+
+/*****************************************/
+/**************** MY CODE ****************/
+/*****************************************/
+
+main {
+  scroll-behavior: smooth; 
+}
+
+.test {
+  scroll-behavior: smooth; 
+}
+
+ .mixcloud {
+  scroll-behavior: smooth; 
+}
+
+
+
+
+
+a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+}
+
+nav {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  width: 339px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+section {
+  scroll-behavior: smooth;
+}
+
+section div {
+  scroll-behavior: smooth;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 8vw;
+}

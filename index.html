@@ -10,22 +10,21 @@
 		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet"> 
 		 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">  
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Add the new slick-theme.css if you want the default styling -->
+		<!-- Add the new slick-theme.css if you want the default styling -->
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<!-- Linkt his one second bc it has the media queries  -->
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-
-  <script type="text/javascript" src="./slider.js"></script>  
+  	<script type="text/javascript" src="./slider.js"></script>  
 	</head>
-	<body>
+	
 
+	<body>
 		<header>
 				<nav class="left debug">
 					<ul>
 						<li><a href="index.html">KMKB</a></li>
-						<li><a href="interviews.html">Interviews</a></li>
-						<!-- <li><a href="about.html">About</a></li> -->
+						<li><a href="#interviews">Interviews</a></li>
+						<li><a href="#about">About</a></li>
 					</ul>
 				</nav>
 				<div class="right debug">
@@ -36,7 +35,10 @@
 		</header>
 		
 		<main>
-			<div class="main">
+
+			<section>
+				<div class="nav-spacer"></div>
+				<div id="kmkb" class="main">
 				<div class="slick-slider-container">
 			    <img src="./images/sunset1.jpg" />
 			    <img src="./images/donkeys.jpg" />
@@ -45,7 +47,6 @@
 			    <img src="./images/sunset2.jpg" />
 			    <img src="./images/horses.jpg" />
 					<img src="./images/horseandcalf.jpg" />
-			    <img src="./images/livingstons.jpg" />
 				</div> 
 
 				<div class="arrow-prev">〈</div>
@@ -62,7 +63,7 @@
 			  </button>
 
 			</div>
-
+		</section>
 
 				<script type="text/javascript">
 			    $(document).ready(function(){
@@ -82,6 +83,68 @@
 			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 			<script type="text/javascript" src="slick/slick.min.js"></script>
+
+			<!-- TODO: move slick script to a separate file -->
+
+
+			<!-- INTERVIEW SECTION -->
+
+			<section>
+				<div class="nav-spacer"></div>
+				<div id="interviews">
+					<h2>Interviews</h2>
+					<div class="interview-container">
+							<div class="mixcloud"> 
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fagustin-gonzalez-augie%2F" frameborder="0" ></iframe>
+	    				</div>
+	    				<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fvijay-vaitheeswaran%2F" frameborder="0" ></iframe>
+	    				</div>
+	    				<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fmaria-and-jesus-ortiz%2F" frameborder="0" ></iframe>
+	    				</div>
+							<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Ftyler-spurgin%2F" frameborder="0" ></iframe>
+	    				</div>
+							<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fvicky-garlick%2F" frameborder="0" ></iframe>
+	    				</div>
+							<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fjose-grejada%2F" frameborder="0" ></iframe>
+	    				</div>
+							<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Froseland-klein%2F" frameborder="0" ></iframe>
+	    				</div>
+							<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Feli-cordova%2F" frameborder="0" ></iframe>
+	    				</div>
+							<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fgail-waterman%2F" frameborder="0" ></iframe>
+	    				</div>
+	    				<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fdavid-and-jd-garcia%2F" frameborder="0" ></iframe>
+	    				</div>
+	    				<div class="mixcloud">
+	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Flineaus-lorette%2F" frameborder="0" ></iframe>
+	    				</div>
+	    			</div>
+				</div>
+			</section>
+
+			<!-- ABOUT SECTION -->
+
+			<section>
+				<div class="nav-spacer"></div>
+				<div id="about" class="about-container">
+					<h2>About</h2>
+					<img alt="instagram" src="images/placeholderradio.jpg"/>
+					<div class="about-overlay">
+						<p>KMKB is a community radio station in Marfa, Texas. No News Is Good News! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+			</section>
+
+
 
 		</main>
 	</body>
