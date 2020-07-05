@@ -109,9 +109,7 @@ select {
 }
 
 .debug {
-  border-color: red;
-  border: 1px;
-  /*outline-style: solid;*/
+  outline-style: solid;
 }
 
 /************************/
@@ -281,7 +279,7 @@ body {
 }
 
 .center-panel {
-  width: 60%;
+  width: 80%;
   text-align: center;
   /*padding: 20px 10px;*/
   padding: 3%;
@@ -297,22 +295,43 @@ body {
 
 .center-panel p {
   text-align: left;
-  margin: 20px 0px 40px 0px;
+  /*margin: 20px 0px 40px 0px;*/
+}
+
+.table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 10px;
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.row {
+    display: table-row;
+    /*width: 100%;*/ /*Optional*/
+    /*table-layout: fixed; *//*Optional*/
+    /*border-spacing: 10px;*/ /*Optional*/
+    /*background-color: blue;
+    outline-style: dotted;*/
+}
+.col {
+    display: table-cell;
+    text-align: center;
+    /*margin: 30px;*/
+    /*background-color: white; *//*Optional*/
 }
 
 .mixcloud {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
 }
 
-iframe {
-  margin: 10px;
-  display: block;
-  width: 60%;
-  height: auto;
-}
+.mixcloud iframe {
+  height: 100%;
+  width: 100%;
+} 
 
 
 /*****/
@@ -350,11 +369,15 @@ iframe {
 
   .listen {
     top: max(calc(50% + 90px), 250px) ;
-  } 
-
-
-
+  }
 }
+
+@media screen and (max-width: 400px) {
+  .mixcloud {
+    width: 100px;
+    height: 100px;
+}
+
 
 
 /*The smallest screen size in active use is currently the iPhone 5, which comes in at 320 pixels wide. 
