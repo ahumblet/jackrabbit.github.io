@@ -275,7 +275,8 @@ body {
   /*height: auto;
   width: 100%;*/
   text-align: center;
-  background-image: linear-gradient(to bottom right, #c87636, #d66d66);
+  /*background-image: linear-gradient(to bottom right, #c87636, #d66d66);*/
+  background-image: linear-gradient(to bottom right, #eee, #ddd);
   /*background-color: lightgrey;*/
   /*background-image: url("./images/sunsetbackground.png");
   background-size:100% 100%;*/
@@ -318,8 +319,8 @@ body {
 
 .mixcloud {
   display: inline-block;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   padding: 10px;
 }
 
