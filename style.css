@@ -41,8 +41,8 @@ dd {
 
 /* Set core body defaults */
 body {
-  /*min-height: 100vh; I think i might want this for non-homepage pages*/
-  /*scroll-behavior: smooth;*/
+  min-height: 100vh;
+  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -83,7 +83,7 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    /*scroll-behavior: auto !important;*/
+    scroll-behavior: auto !important;
   }
 }
 
@@ -92,288 +92,6 @@ select {
 /**************** MY CODE ****************/
 /*****************************************/
 
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  font-family: catamaran;
-  color: #111;
-}
-
-@font-face {
-    font-family: 'Seaside Resort';
-    src: url('./fonts/SEASRN__-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.debug {
-  /*outline-style: solid;*/
-}
-
-body {
-  /*scroll-behavior: smooth;  */
-}
-
-/************************/
-/******** HEADER ********/
-/************************/
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: flex-end; /* Push children to the bottom of the element*/
-  /*outline-style: solid;*/
-  background-color: white;
-  opacity: 0.9;
-  z-index: 10000;
-}
-
-header .left {
-  margin: 0px 0px 10px 40px; /* Indent from left and bottom */
-  flex: 5;
-  /*outline-style: solid;*/
-}
-
-header .right {
-  margin: 0px 15px 7px 0px; /* Indent from right and bottom */
-  flex: 1;
-  text-align: right;
-  /*outline-style: solid;*/
-}
-
-header nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0px 20px 0px 0px; /*Horizontal spacing between navbar elements*/
-  /*outline-style: solid;*/
-}
-
-header nav ul li a {
-  font-family: catamaran;
-  font-size: 20px;
-  color: #111;
-  /*outline-style: solid;*/
-}
-
-header div a img {
-  display: inline-block;
-  /*outline-style: dotted;*/
-  height: 42px;
-  width: 42px;
-  margin: 0px 0px 0px 0px;
-}
-
-/***************************/
-/******** MAIN BODY ********/
-/***************************/
-
-.main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: pink;
-  /*outline-style: solid;*/
-  margin: 0px;
-  padding: 0px;
-}
-
-/******************************/
-/******** IMAGE SLIDER ********/
-/******************************/
-
-body {  
-    margin: 0;  
-}   
-
-.slick-slider-container {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: calc(100vh - 140px);
-  /*border-style: dotted;*/
-}
-
-.slick-slider-container img {
-  width: 100vw;
-  height: calc(100vh - 140px); /*couldn't set w&h as relative to parent bc it is internally relative display*/
-  object-fit: cover;
-  overflow: hidden;
-  /*border-style: solid;*/
-}
-
-.arrow-prev, .arrow-next {
-  font-size: 45px;
-  color: lightgrey;
-  position: absolute;
-  top: 50%;
-  opacity: .7;
-  /*outline-style: solid;*/
-}
-
-.arrow-prev {
-  padding-right: 10px;
-  left: 0;
-}
-
-.arrow-next {
-  padding-left: 10px;
-  right: 0;
-}
-
-.arrow-prev:hover, .arrow-next:hover {
-  opacity: .90;
-  cursor: pointer;
-}
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  color: #eb5e17;
-  font-family: 'Seaside Resort';
-  font-size: 30px;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  /*outline-style: solid;*/
-}
-
-.listen {
-  width: 100px;
-  height: 35px;
-  position: absolute;
-  top: calc(50% + 90px) ;
-  background-color: lightgrey;
-  text-align: center;
-  border-radius: 5px;
-  opacity: 0.8;
-  border: none;
-  font-weight: bold;
-  font-size: 13px;
-} 
-
-.listen:hover {
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-.listen:active {
-  cursor: pointer;
-  opacity: 0.95;
-}
-
-
-/************************************/
-/******** INTERVIEWS SECTION ********/
-/************************************/
-
-#interviews {
-  text-align: center;
-}
-
-.interview-container {
-  width: 70vw;
-  margin: auto;
-  text-align: center;
-  scroll-margin-top: 70px;
-}
-
-.interview-container, .about-container {
-  text-align: center;
-  scroll-margin-top: 70px;
-}
-
-
-
-/****************************/
-/******** INTERVIEWS ********/
-/****************************/
-
-
-.header-extension {
-  width: 100%;
-  height: 80px;
-  text-align: center;
-}
-
-.header-extension h1 {
-  margin: 10px;
-  /*font-family: "Seaside Resort";*/
-  /*color: tomato;*/
-  color: 111;
-  font-family: "catamaran";
-  text-transform: uppercase;
-  font-size: 45px;
-}
-
-.main-interview {
-  /*height: auto;
-  width: 100%;*/
-  text-align: center;
-  /*background-image: linear-gradient(to bottom right, #c87636, #d66d66);*/
-  background-image: linear-gradient(to bottom right, #eee, #ddd);
-  /*background-color: lightgrey;*/
-  /*background-image: url("./images/sunsetbackground.png");
-  background-size:100% 100%;*/
-  /*background-repeat: round;*/
-  /*-webkit-filter: blur(5px);  
-  filter: blur(5px);*/
-}
-
-.main-panel {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  /*background-color: #ffdd99;*/
-  background-color: transparent;
-  /*background-image: url("./images/sunset1.jpg"); */
-}
-
-.center-panel {
-  width: 90%;
-  text-align: center;
-  /*padding: 20px 10px;*/
-  padding: 3%;
-  background-color: transparent;
-}
-
-.center-panel h1 {
-  font-family: catamaran;
-  font-size: 30px;
-  background-color: transparent;
-  /*color: #111;*/
-  margin: 0px 20px 0px 20px;
-}
-
-.center-panel p {
-  text-align: left;
-  background-color: transparent;
-  /*margin: 20px 0px 40px 0px;*/
-}
-
-.mixcloud {
-  display: inline-block;
-  width: 250px;
-  height: 250px;
-  padding: 10px;
-}
-
-.mixcloud iframe {
-  height: 100%;
-  width: 100%;
-} 
-
-
-/*****/
 
 /******** MEDIA QUERIES ********/
 
@@ -411,17 +129,6 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .mixcloud {
-    width: 300px;
-    height: 250px;
-  }
-
-  .header-extension {
-      display: none;
-  }
-}
-
 
 
 /*The smallest screen size in active use is currently the iPhone 5, which comes in at 320 pixels wide. 
@@ -430,84 +137,293 @@ with increasing viewport sizes as you move into the Galaxy phones and tablets.*/
 
 
 
-/****************************/
-/******** TAKE 2 ********/
-/****************************/
 
-header {
-  /*display: none;*/
+
+
+/************************************//************************************//************************************//************************************/
+/******** Take 2 Take 2 ********//******** Take 2 Take 2 ********//******** Take 2 Take 2 ********//******** Take 2 Take 2 ********//******** Take 2 Take 2 ********//******** Take 2 Take 2 ********//******** Take 2 Take 2 ********/
+/************************************//************************************//************************************//************************************/
+
+/*************************/
+/******** GENERAL ********/
+/*************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: catamaran;
+  color: #111;
 }
 
-.nav-spacer {
-  width: 100%;
-  height: 70px;
-  /*background-color: yellow;*/
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Seaside Resort';
+    src: url('./fonts/SEASRN__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.debug {
+  /*outline-style: solid;*/
 }
 
 h2 {
-  /*padding: 20px;*/
-  /*margin: 20px;*/
   color: 111;
   font-family: "catamaran";
-  /*text-transform: uppercase;*/
   font-size: 30px;
   line-height: 70px;
-  /*outline-style: dotted;*/
 }
 
+/************************/
+/******** HEADER ********/
+/************************/
 
-
-/************************************/
-/******** ABOUT SECTION ********/
-/************************************/
-
-#about {
-  position: relative;
-}
-
-#about img {
+header {
+  position: fixed;
   width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: flex-end; /* Push children to the bottom of the element*/
+  background-color: white;
+  opacity: 0.9;
+  z-index: 10000;
+}
+
+header .left {
+  margin: 0px 0px 10px 40px; /* Indent from left and bottom */
+  flex: 5;
+}
+
+header .right {
+  margin: 0px 15px 7px 0px; /* Indent from right and bottom */
+  flex: 1;
+  text-align: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px 0px 0px; /*Horizontal spacing between navbar elements*/
+}
+
+header nav ul li:hover {
+  font-weight: bold;
+}
+
+header nav ul li a {
+  font-family: catamaran;
+  font-size: 20px;
+  color: #111;
+}
+
+header div a img {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  margin: 0px 0px 0px 0px;
+}
+
+header div a img:hover {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  margin: 0px 0px 0px 0px;
+}
+
+/********************************/
+/******** SLIDER SECTION ********/
+/********************************/
+
+.kmkb-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider-container {
+  width: 100%;
+  height: calc(100vh - 140px);
+  position: relative;
+  top: 70px;
+  background-color: pink;
+}
+
+.slick-slider-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+
+.slick-slider-container img {
+  width: 100vw;
+  height: calc(100vh - 140px); /*couldn't set w&h as relative to parent bc it is internally relative display*/
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.logo {
+  width: 300px;
   position: absolute;
-  top: 70px;  /* Matches h2 line-height*/
+  top: 45%;
+  left: 50%;
+  color: #eb5e17;
+  font-family: 'Seaside Resort';
+  font-size: 35px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.listen {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  top: calc(50% + 110px) ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 5px;
+  opacity: 0.8;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+} 
+
+.listen:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+.listen:active {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+.arrow-prev, .arrow-next {
+  font-size: 45px;
+  color: lightgrey;
+  position: absolute;
+  top: 50%;
+  opacity: .7;
+}
+
+.arrow-prev {
+  padding-right: 10px;
+  left: 0;
+}
+
+.arrow-next {
+  padding-left: 10px;
+  right: 0;
+}
+
+.arrow-prev:hover, .arrow-next:hover {
+  opacity: .95;
+  cursor: pointer;
+}
+
+
+/***********************************/
+/******** INTERVIEW SECTION ********/
+/***********************************/
+
+#interviews {
+  scroll-margin-top: 71px;
+}
+
+.interview-section {
+  width: 100vw;
+  text-align: center;
+}
+
+.interview-section .inner-container {
+  width: calc(100vw - 200px);
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 30px 70px 30px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.interview-section .inner-container h2 {
+  margin: 20px 0px;
+}
+
+.mixcloud {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+}
+
+.mixcloud:hover {
+  opacity: 0.7;
+}
+
+.mixcloud iframe {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(37, 31, 44);
+} 
+
+/*******************************/
+/******** ABOUT SECTION ********/
+/*******************************/
+
+.about-section {
+  width: 100vw;
+  height: 100vh;
+  /*background-color: yellow;*/
 }
 
 .about-container {
-  display: relative;
-  text-align: center;
+  width: 100%;
+  height: calc(100vh - 140px);
+  position: relative;
+  top: 70px;
+  /*background-color: blue;*/
 }
 
-#about .overlay {
-  position: absolute;
-  top: 70px;  /* Matches h2 line-height*/
-  background-color: grey;
-  opacity: 0.5;
+.about-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
 }
 
-.about-overlay { /*should change this to only be relative to image frame*/
+.about-overlay {
+  width: 60%;
   position: absolute;
-  top: 80%
+  top: 50%;
   left: 50%;
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
+  background: rgba(50, 50, 50, 0.7);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center; 
+}
 
-  width: 80vw;
-  /*background-color: grey;
-  opacity: 0.5;*/
-  text-align: center;
-  /*border-radius: 5px;*/
+.about-overlay h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 .about-overlay p {
-  display: inline-block;
-  margin: auto;
-  text-align: center;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 5px;
 }
 
+/*******************************/
+/******** MEDIA QUERIES ********/
+/*******************************/
+
+@media screen and (max-width: 420) {
 
 
-  
-  
-  
-  
+}

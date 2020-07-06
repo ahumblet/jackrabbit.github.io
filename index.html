@@ -22,7 +22,7 @@
 		<header>
 				<nav class="left debug">
 					<ul>
-						<li><a href="index.html">KMKB</a></li>
+						<li><a href="#kmkb">KMKB</a></li>
 						<li><a href="#interviews">Interviews</a></li>
 						<li><a href="#about">About</a></li>
 					</ul>
@@ -33,118 +33,92 @@
 					</a>
 				</div>
 		</header>
-		
+	
+
 		<main>
 
-			<section>
-				<div class="nav-spacer"></div>
-				<div id="kmkb" class="main">
-				<div class="slick-slider-container">
-			    <img src="./images/sunset1.jpg" />
-			    <img src="./images/donkeys.jpg" />
-			    <img src="./images/godbold.jpg" />
-			    <img src="./images/cityhall.jpg" />
-			    <img src="./images/sunset2.jpg" />
-			    <img src="./images/horses.jpg" />
-					<img src="./images/horseandcalf.jpg" />
-				</div> 
-
-				<div class="arrow-prev">〈</div>
-				<div class="arrow-next"> 〉</div>
-
-				<div>
-			  	<h1 class="logo debug">
-			  		KMKB<br>98.9 FM<br>Marfa, Texas
-			  	</h1>
-			  </div>
-
-			  <button class="listen" type="button" onclick="window.open('http://12.132.166.216:8000/listen','_blank')" data-title="KMKB" target="_parent">
-         	LISTEN
-			  </button>
-
-			</div>
-		</section>
-
-				<script type="text/javascript">
-			    $(document).ready(function(){
-			      $('.slick-slider-container').slick({
-			        dots: true,
-			        infinite: true,
-			        arrows: true,
-			        prevArrow: '.arrow-prev',
-			        nextArrow: '.arrow-next',
-			        fade: true,
-			        slidesToShow: 1,
-			        // adaptiveHeight: true
-			      });
-			    });
-			  </script>
-
-			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="slick/slick.min.js"></script>
-
-			<!-- TODO: move slick script to a separate file -->
-
-
-			<!-- INTERVIEW SECTION -->
-
-			<section>
-				<div class="nav-spacer"></div>
-				<div id="interviews">
-					<h2>Interviews</h2>
-					<div class="interview-container">
-							<div class="mixcloud"> 
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fagustin-gonzalez-augie%2F" frameborder="0" ></iframe>
-	    				</div>
-	    				<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fvijay-vaitheeswaran%2F" frameborder="0" ></iframe>
-	    				</div>
-	    				<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fmaria-and-jesus-ortiz%2F" frameborder="0" ></iframe>
-	    				</div>
-							<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Ftyler-spurgin%2F" frameborder="0" ></iframe>
-	    				</div>
-							<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fvicky-garlick%2F" frameborder="0" ></iframe>
-	    				</div>
-							<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fjose-grejada%2F" frameborder="0" ></iframe>
-	    				</div>
-							<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Froseland-klein%2F" frameborder="0" ></iframe>
-	    				</div>
-							<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Feli-cordova%2F" frameborder="0" ></iframe>
-	    				</div>
-							<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fgail-waterman%2F" frameborder="0" ></iframe>
-	    				</div>
-	    				<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fdavid-and-jd-garcia%2F" frameborder="0" ></iframe>
-	    				</div>
-	    				<div class="mixcloud">
-	    					<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Flineaus-lorette%2F" frameborder="0" ></iframe>
-	    				</div>
-	    			</div>
+			<!-- KMKB/SLIDER SECTION -->
+			<section id="kmkb">
+				<div class="kmkb-section">
+					<div class="slider-container">
+						<div class="slick-slider-container">
+					    <img src="./images/sunset1.jpg" />
+					    <img src="./images/donkeys.jpg" />
+					    <img src="./images/godbold.jpg" />
+					    <img src="./images/cityhall.jpg" />
+					    <img src="./images/sunset2.jpg" />
+					    <img src="./images/horses.jpg" />
+							<img src="./images/horseandcalf.jpg" />
+						</div> 
+						<div class="arrow-prev">〈</div>
+						<div class="arrow-next"> 〉</div>
+						<div><h1 class="logo debug">KMKB<br>98.9 FM<br>Marfa, Texas</h1></div>
+				  	<button class="listen" type="button" onclick="window.open('http://12.132.166.216:8000/listen','_blank')" data-title="KMKB" target="_parent">LISTEN</button>
+				  </div>
 				</div>
+
+				<!-- TODO: are all of these still needed? -->
+				<script type="text/javascript" src="kmkb_slick.js"></script>
+				<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+				<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+				<script type="text/javascript" src="slick/slick.min.js"></script>
 			</section>
 
-			<!-- ABOUT SECTION -->
-
-			<section>
-				<div class="nav-spacer"></div>
-				<div id="about" class="about-container">
-					<h2>About</h2>
-					<img alt="instagram" src="images/placeholderradio.jpg"/>
-					<div class="about-overlay">
-						<p>KMKB is a community radio station in Marfa, Texas. No News Is Good News! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<!-- INTERVIEW SECTION -->
+			<section id="interviews">
+				<div class="interview-section">
+					<div class="inner-container">
+						<h2>Interviews</h2>
+						<div class="mixcloud"> 
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fagustin-gonzalez-augie%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fvijay-vaitheeswaran%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fmaria-and-jesus-ortiz%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Ftyler-spurgin%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fvicky-garlick%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fjose-grejada%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Froseland-klein%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Feli-cordova%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fgail-waterman%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Fdavid-and-jd-garcia%2F" frameborder="0" ></iframe>
+						</div>
+						<div class="mixcloud">
+							<iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDeployTheMoose%2Flineaus-lorette%2F" frameborder="0" ></iframe>
+						</div>
 					</div>
 				</div>
 			</section>
 
 
+			<!-- ABOUT SECTION -->
+			<section id="about">
+				<div class="about-section">
+					<div class="about-container">
+						<img alt="kmkb-studio" src="images/placeholderradio.jpg"/>
+						<div class="about-overlay">
+							<h2>No News Is Good News!</h2>
+							<p>KMKB is a community radio station in Marfa, Texas. There is no news, only music and interviews. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main>
 	</body>
