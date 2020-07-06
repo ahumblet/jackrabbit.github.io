@@ -437,11 +437,6 @@ header div a img:hover {
 - About 
   - smaller header and footer
   - smaller font
-
-
-
-  prev rule was for screens narrower than 450.
-  this one is for height less than 450. 
 */
 @media screen and (max-height: 420px) {
   
