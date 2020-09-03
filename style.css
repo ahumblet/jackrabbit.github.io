@@ -406,6 +406,12 @@ header div a img:hover {
     font-size: 30px;
   }
 
+  header nav ul li a {
+    font-family: catamaran;
+    font-size: 15px;
+    color: #111;
+  }
+
   .interview-section .inner-container h2 {
     display: none;
   }
