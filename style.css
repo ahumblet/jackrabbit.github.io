@@ -366,34 +366,6 @@ header div a img:hover {
 }
 
 /*******************************/
-/***** RADIO PLAYS SECTION *****/
-/*******************************/
-
-.plays-section {
-  width: 100vw;
-  height: 100vh;
-}
-
-.plays-container {
-  width: 100%;
-  text-align: center;
-  height: calc(100vh - 140px);
-  position: relative;
-  top: 70px;
-  background-color: #00001a;
-}
-
-.plays-container img {
-  height: 100%;
-  object-fit: contain;
-  display: inline;
-}
-
-.plays-container h1 {
-  text-align: center;
-}
-
-/*******************************/
 /******** MEDIA QUERIES ********/
 /*******************************/
 
@@ -404,12 +376,6 @@ header div a img:hover {
     width: 300px;
     top: 45%;
     font-size: 30px;
-  }
-
-  header nav ul li a {
-    font-family: catamaran;
-    font-size: 15px;
-    color: #111;
   }
 
   .interview-section .inner-container h2 {
