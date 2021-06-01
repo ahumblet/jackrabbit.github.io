@@ -366,6 +366,15 @@ header div a img:hover {
 }
 
 /*******************************/
+/***** GO FUND ME SECTION *****/
+/*******************************/
+
+.gofundme-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*******************************/
 /******** MEDIA QUERIES ********/
 /*******************************/
 
@@ -374,8 +383,13 @@ header div a img:hover {
 @media screen and (max-width: 450px) {
   .logo {
     width: 300px;
-    top: 45%;
     font-size: 30px;
+  }
+
+  header nav ul li a {
+    font-family: catamaran;
+    font-size: 15px;
+    color: #111;
   }
 
   .interview-section .inner-container h2 {
